@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+https://homebrewguide.netlify.com/* https://guide.sdsetup.com/en/:splat 301!
+https://guide.sdsetup.com https://guide.sdsetup.com/en/
