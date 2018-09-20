@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homebrew Guide: Troubleshooting</title>
+	<link rel="stylesheet" type="text/css" href="scripts/semanticui/semantic.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="scripts/semanticui/semantic.min.js"></script>
+	<script src="scripts/csi.min.js"></script>
+</head>
+<body style="background-color:#F7F7F7;height:100%">
+	<div data-include="layout/header.html"></div>
+	<div class="ui container">
+		<div class="docs-example">
+			<h1 class="ui header" style="text-align:center">
+				Troubleshooting
+			</h1>
+			<div class="ui divider"></div>
+			<p style="text-align:center">Something didn't work right? Here are some common problems with their solutions.</p>
+		</div>
+		
+		<div class="docs-example">
+			<h2 class="ui header" style="text-align:center">
+				The Homebrew Menu doesn't show anything!
+			</h2>
+			<div class="ui divider"></div>
+			<p>This is usually due to an archive metadata bit used by some OS's that Horizon simply can't deal with. Here's how to fix it:</p>
+			<ol>
+				<li>Launch into Hekate</li>
+				<li>Select <b>'Tools > Unset archive bit (all sd files)'</b>
+					<ul><li>This might take a while, be patient.</li></ul>
+				</li>
+					
+			</ol>
+		</div>
+		<div class="ui error message" style="text-align:center">
+			If this page doesn't solve your problem, feel free to ask for help in the <a href="https://discord.gg/5WrBKQ">support channel</a> on the SDFilesSwitched Discord.
+		</div>
+	</div>
+	<div data-include="layout/footer.html"></div>
+</body>
+</html>

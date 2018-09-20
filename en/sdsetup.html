@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homebrew Guide: SD Card Setup</title>
+	<link rel="stylesheet" type="text/css" href="scripts/semanticui/semantic.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/site.css"/>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.min.js"
+	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	  crossorigin="anonymous"></script>
+	<script src="scripts/semanticui/semantic.min.js"></script>
+	<script src="scripts/csi.min.js"></script>
+</head>
+<body style="background-color:#F7F7F7;height:100%">
+	<div data-include="layout/header.html"></div>
+	<div class="ui container">
+		<div class="docs-example">
+			<h1 class="ui header" style="text-align:center">
+				Section 2: SD Card Setup
+			</h1>
+			<div class="ui divider"></div>
+			<p style="text-align:center">At this point, you've verified that you can exploit fusee-gelee to run CFW. You will now prepare your SD card with the necessary software.</p>
+		</div>
+		
+		<div class="ui info message" style="text-align:center">
+			If something goes wrong or you need help, check <a href="troubleshooting.html">troubleshooting</a>.
+		</div>
+		
+		<div class="ui info message" style="text-align:center">
+			This guide will assume you want to use <a href="https://www.sdsetup.com">https://www.sdsetup.com</a> to get your homebrew setup, and will guide you on doing so. You can alternatively directly use <a href="https://www.github.com/tumGER/SDFilesSwitch">tomGER's SDFilesSwitch</a>, or obtain and setup CFW software on your own (not recommended).
+		</div>
+		
+		<div class="docs-example">
+			<h2 class="ui header" style="text-align:center">
+				(Recommended) Step 1: Formatting your SD card to exFAT.
+			</h2>
+			<div class="ui divider"></div>
+			<p>The Nintendo Switch supports the exFAT filesystem format for your SD card. exFAT has the benefit of supporting files larger than 4GB (FAT32 does not support this). This step is optional, but highly recommended.</p>
+			
+			<div class="ui divider"></div>
+			
+			<b>If you are using Windows, follow these instructions:</b>
+			<ol>
+				<li>If you have data on your SD card you would like to keep, copy this data onto your PC somewhere, as <b>formatting will wipe your SD card!</b></li>
+				<li>Insert your SD card into your PC.</li>
+				<li>Open <b>File Explorer</b>, right click the SD card drive and select Format</li>
+				<li>For <b>File System</b>, select <b>exFAT</b></li>
+				<li>For <b>Allocation Unit Size</b>, select <b>128kb</b></li>
+				<li>Change the volume label to whatever name you want your SD card to appear with in File Explorer.</li>
+				<li>Make sure <b>"Quick Format"</b> is checked!</li>
+				<li>Click Start</li>
+				<li>Close the dialog</li>
+				<li>If you copied data off, you can move this data back to your SD card</li>
+			</ol>
+			
+			Continue to "After formatting your SD card to exFAT".
+			
+			<div class="ui divider"></div>
+			
+			<b>If you are using OSX, follow these instructions:</b>
+			<ol>
+				<li>If you have data on your SD card you would like to keep, copy this data onto your PC somewhere, as <b>formatting will wipe your SD card!</b></li>
+				<li>Insert your SD card into your PC</li>
+				<li>Open <b>Disk Utility</b></li>
+				<li>Select your SD card on the left side of the window</li>
+				<li>Click the <b>"Erase"</b> button at the top</li>
+				<li>Choose a name for your SD card</li>
+				<li>Select <b>ExFAT</b> as the format</li>
+				<li>Click <b>Erase</b></li>
+				<li>Close Disk Utility</li>
+				<li>If you copied data off, you can move this data back to your SD card</li>
+			</ol>
+			
+			Continue to "After formatting your SD card to exFAT".
+			
+			<div class="ui divider"></div>
+			
+			<b>If you are using Linux, you'll need to Google how to reformat your SD card to exFAT based on your distribution.</b>
+			<br><br>
+			Continue to "After formatting your SD card to exFAT".
+			
+			<div class="ui divider"></div>
+			
+			<b>After formatting your SD card to exFAT:</b>
+			
+			<ol>
+				<li>Insert your SD card into your Switch</li>
+				<li>Turn on your Switch</li>
+				<li>Your Switch will ask to install a system update to support your SD card. Accept this and wait for the update to install.</li>
+			</ol>
+			<div class="ui info message" style="text-align:center">
+					exFAT is a proprietary filesystem format made by Microsoft. When you use exFAT, Nintendo must pay a licensing fee to Microsoft. They choose to pay as little as possible by only paying for people who actually end up using exFAT, which is determined when you get the exFAT system update.
+				</div>
+		</div>
+		
+		<div class="docs-example">
+			<h2 class="ui header" style="text-align:center">
+				Step 2: Downloading Software
+			</h2>
+			<div class="ui divider"></div>
+			<p>This guide will walk you through the process of using the website SDSetup to prepare your SD card. This website allows you to easily select which homebrew you want and will automatically prepare a ZIP file with the correct file structure for your SD card.</p>
+			<ol>
+				<li>Go to <a href=https://www.sdsetup.com>https://www.sdsetup.com</a></li>
+				<li>Select Nintendo Switch</li>
+				<li>Select the <b>"SDFiles Defaults"</b> package
+					<ul><li>If you think you know what you are doing, you can choose whatever CFW and options you wish. This guide will assume you at least select Atmosphere, HBMenu and Hekate.</li></ul>
+				</li>
+				<li>Select any additional homebrew packages you wish.
+					<ul><li>On desktop, you can hover over the homebrew names to get a description of what they do.</li></ul>
+				</li>
+				<li>Select <b>"Download your ZIP"</b>
+					<ul><li>This can take a while depending on your Internet speed and latency. Be patient.</li></ul>
+				</li>
+				<li>Save the resulting ZIP if your browser does not do so automatically.</li>
+					
+			</ol>
+		</div>
+		
+		<div class="docs-example">
+			<h2 class="ui header" style="text-align:center">
+				Step 3: Preparing Software
+			</h2>
+			<div class="ui divider"></div>
+			<p>Extract the ZIP file from SDSetup to a folder on your PC.</p>
+			<ul>
+				<li>The <b>'sd'</b> folder contains all of the files that should go on your SD card. <b>Copy all of the contents of this folder to the root of your SD card.</b></li>
+				<li>The <b>'payloads'</b> folder contains all of the fusee-gelee payloads which can be launched with TegraRcmGui/Rekado/fusee-launcher/etc that you selected.</li>
+				<li>The <b>'pc'</b> folder contains all of the PC tools that you selected.</li>
+				<li>The <b>'android'</b> folder contains all of the Android tools you selected.</li>
+				<li>The <b>'licenses'</b> folder contains distribution licenses for downloaded applications</li>
+				<li>The <b>'readmes'</b> folder contains readmes for selected applications, if one was provided.</li>
+			</ul>
+			
+			<p>After copying the SD card files to your SD card, insert it back into your Switch.</p>
+		</div>
+		
+		<div class="ui success message" style="text-align:center">
+			You are technically done! At this point, you can use the Hekate payload provided in your download in conjunction with your payload sender to launch into Atmosphere or ReiNX CFW. The next section includes important information about safety precautions you should take.
+		</div>
+		
+		<a href="safetyprecautions.html"><button class="fluid ui red button">Proceed to Section 3: Safety Precautions</button></a>
+	</div>
+	<div data-include="layout/footer.html"></div>
+</body>
+</html>
