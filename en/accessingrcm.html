@@ -82,7 +82,7 @@
 					</li></ul>
 				</li>
 				<li>
-					<a href="https://t.co/d5nCLNa7E5">This test payload</a> downloaded to your payload sender device to verify if your Switch is vulnerable to fusee-gelee.
+					<a href="https://puu.sh/BzlG7/2729cc70b3.bin">This test payload</a> downloaded to your payload sender device to verify if your Switch is vulnerable to fusee-gelee.
 				</li>
 			</ul>
 		</div>
@@ -134,7 +134,7 @@
 					<ul><li>Your PC should play the device connected sound and your Switch <b>should not turn on.</b> If your Switch turns on, repeat Step 1 to enter RCM.</li></ul>
 				</li>
 				<li>Once your Switch is plugged in, you should see a green icon with the message "RCM OK".</li>
-				<li>Select the <b>fusee.bin</b> test payload you downloaded earlier</li>
+				<li>Select the <b>fusee-test.bin</b> test payload you downloaded earlier</li>
 				<li>Select "Inject Payload" if the payload has not already been injected.
 					<ul><li>If you get the error "RC=-50", restart the application and try again.</li></ul>
 				</li>
@@ -150,11 +150,11 @@
 			<b>If you are using fusee-launcher, follow these instructions:</b>
 			<ol>
 				<li>Open a terminal in the fusee-launcher directory.</li>
-				<li>Copy the <b>fusee.bin</b> file to this directory..</li>
+				<li>Copy the <b>fusee-test.bin</b> file to this directory..</li>
 				<li>Plug your Switch into your PC using your USB cable.
 					<ul><li>Your Switch <b>should not turn on.</b> If your Switch turns on, repeat Step 1 to enter RCM.</li></ul>
 				</li>
-				<li>Run the command 'sudo python3 ./fusee-launcher.py ./fusee.bin'</li>
+				<li>Run the command 'sudo python3 ./fusee-launcher.py ./fusee-test.bin'</li>
 			</ol>
 			<div class="ui green message" style="text-align:center">
 				Some text should now be displayed on your Nintendo Switch with an ASCII ReSwitched logo. If so, celebrate! Your Switch is vulnerable and you can now push payloads!
@@ -167,10 +167,10 @@
 			<ol>
 				<li>Open Rekado on your Android device.</li>
 				<li>Navigate to the Payloads section of the app and allow it to request storage.</li>
-				<li>Click the '+' button and select the <b>fusee.bin</b> file.</li>
+				<li>Click the '+' button and select the <b>fusee-test.bin</b> file.</li>
 				<li>Plug your Switch into your Android device using a USB cable/adapter.</li>
 				<li>Your phone should give you a prompt to open Rekado with the option to use by default. Accept and press OK.</li>
-				<li>Under the Select Injector menu, touch Boot Payload and <b>fusee.bin</b></li>
+				<li>Under the Select Injector menu, touch Boot Payload and <b>fusee-test.bin</b></li>
 			</ol>
 			<div class="ui green message" style="text-align:center">
 				Some text should now be displayed on your Nintendo Switch with an ASCII ReSwitched logo. If so, celebrate! Your Switch is vulnerable and you can now push payloads!
@@ -179,8 +179,7 @@
 				If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is patched. You will not be able to run CFW at this time.<br>(You should try a few more times just to be sure)
 			</div>
 			<div class="ui divider"></div>
-			Press the power button to turn off your Switch.
-			<ul><li>If you get a blue screen with an error, hold the power button for 15 seconds to shutdown your Switch</li></ul>
+			Press the power button to exit the payload, and then hold the power button for 15 seconds to fully shut down your Switch.
 		</div>
 		
 		<a href="sdsetup.html"><button class="fluid ui red button">Proceed to Section 2: SD Card Setup</button></a>
