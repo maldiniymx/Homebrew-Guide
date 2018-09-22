@@ -13,12 +13,12 @@
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
 	<script src="scripts/semanticui/semantic.min.js"></script>
-	<script src="scripts/csi.min.js"></script>
+	<script src="scripts/global.js"></script>
 </head>
 <body style="background-color:#F7F7F7;height:100%">
-	<div data-include="layout/header.html"></div>
+	<div class="ui menu"> <a href="/en/" class="item"><img class="ui small image" src="/en/img/logo.png" style="display:block;margin-left:auto;margin-right:auto"/></a> <div class="ui simple dropdown item"> Procedure <i class="dropdown icon"></i> <div class="menu"> <a href="beforestarting.html" class="item">Before Starting </a> <a href="accessingrcm.html" class="item">Accessing RCM </a> <a href="sdsetup.html" class="item">SD Card Setup </a> <a href="safetyprecautions.html" class="item">Safety Precautions </a> <a href="final.html" class="item">Using CFW </a> </div></div><a href="troubleshooting.html" class="item">Troubleshooting </a> <a href="faq.html" class="item"> Frequently Asked Questions </a> <a href="credits.html" class="item"> Credits </a> <div class="right menu"> <a href="https://www.sdsetup.com" class="item">Back to SDSetup </a> </div></div>
 	<div class="ui container">
-		<div class="docs-example">
+		<div class="ui segment">
 			<h1 class="ui header" style="text-align:center">
 				Section 2: SD Card Setup
 			</h1>
@@ -26,15 +26,15 @@
 			<p style="text-align:center">At this point, you've verified that you can exploit fusee-gelee to run CFW. You will now prepare your SD card with the necessary software.</p>
 		</div>
 		
-		<div class="ui info message" style="text-align:center">
+		<div class="ui blue message" style="text-align:center">
 			If something goes wrong or you need help, check <a href="troubleshooting.html">troubleshooting</a>.
 		</div>
 		
-		<div class="ui info message" style="text-align:center">
+		<div class="ui blue message" style="text-align:center">
 			This guide will assume you want to use <a href="https://www.sdsetup.com">https://www.sdsetup.com</a> to get your homebrew setup, and will guide you on doing so. You can alternatively directly use <a href="https://www.github.com/tumGER/SDFilesSwitch">tomGER's SDFilesSwitch</a>, or obtain and setup CFW software on your own (not recommended).
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				(Recommended) Step 1: Formatting your SD card to exFAT.
 			</h2>
@@ -92,12 +92,12 @@
 				<li>Turn on your Switch</li>
 				<li>Your Switch will ask to install a system update to support your SD card. Accept this and wait for the update to install.</li>
 			</ol>
-			<div class="ui info message" style="text-align:center">
+			<div class="ui blue message" style="text-align:center">
 					exFAT is a proprietary filesystem format made by Microsoft. When you use exFAT, Nintendo must pay a licensing fee to Microsoft. They choose to pay as little as possible by only paying for people who actually end up using exFAT, which is determined when you get the exFAT system update.
 				</div>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Step 2: Downloading Software
 			</h2>
@@ -120,7 +120,7 @@
 			</ol>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Step 3: Preparing Software
 			</h2>
@@ -138,12 +138,12 @@
 			<p>After copying the SD card files to your SD card, insert it back into your Switch.</p>
 		</div>
 		
-		<div class="ui success message" style="text-align:center">
+		<div class="ui green message" style="text-align:center">
 			You are technically done! At this point, you can use the Hekate payload provided in your download in conjunction with your payload sender to launch into Atmosphere or ReiNX CFW. The next section includes important information about safety precautions you should take.
 		</div>
 		
 		<a href="safetyprecautions.html"><button class="fluid ui red button">Proceed to Section 3: Safety Precautions</button></a>
 	</div>
-	<div data-include="layout/footer.html"></div>
+	<div style="margin:2em"><div class=" ui center compact segment" style="margin:auto"><span style="margin-right:1rem;padding-bottom:0.5rem">Light</span> <div class="ui toggle fitted checkbox" "><input id="cbx-theme" type="checkbox"><label/> </div><span style="margin-left:1rem">Dark</span></div><br><div style="text-align:center;color:#808080"><b>&copy; 2018 noahc3<br/>The Nintendo Switch name and logo are &copy; Nintendo. This site is in no way affiliated with Nintendo or any of its partners.</b></div></div>	
 </body>
 </html>

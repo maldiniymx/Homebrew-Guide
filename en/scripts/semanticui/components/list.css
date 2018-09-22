@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.4.0 - List
+ * # Semantic UI 2.6.0 - List
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -191,8 +191,8 @@ ol.ui.list ol li,
 }
 
 /* Linked Item Icons */
-.ui.list .list > a.item i.icon,
-.ui.list > a.item i.icon {
+.ui.list .list > a.item > i.icon,
+.ui.list > a.item > i.icon {
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -202,8 +202,8 @@ ol.ui.list ol li,
   cursor: pointer;
   color: #4183C4 !important;
 }
-.ui.list .list > .item a.header:hover,
-.ui.list > .item a.header:hover {
+.ui.list .list > .item > a.header:hover,
+.ui.list > .item > a.header:hover {
   color: #1e70bf !important;
 }
 
@@ -332,8 +332,8 @@ ol.ui.list ol li,
         Hover
 --------------------*/
 
-.ui.list .list > a.item:hover .icon,
-.ui.list > a.item:hover .icon {
+.ui.list .list > a.item:hover > .icon,
+.ui.list > a.item:hover > .icon {
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -461,7 +461,7 @@ ol.ui.list ol li,
 .ui.selection.list > .item:last-child {
   margin-bottom: 0em;
 }
-.ui.selection.list.list > .item:hover,
+.ui.selection.list .list > .item:hover,
 .ui.selection.list > .item:hover {
   background: rgba(0, 0, 0, 0.03);
   color: rgba(0, 0, 0, 0.8);

@@ -13,12 +13,12 @@
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
 	<script src="scripts/semanticui/semantic.min.js"></script>
-	<script src="scripts/csi.min.js"></script>
+	<script src="scripts/global.js"></script>
 </head>
 <body style="background-color:#F7F7F7;height:100%">
-	<div data-include="layout/header.html"></div>
+	<div class="ui menu"> <a href="/en/" class="item"><img class="ui small image" src="/en/img/logo.png" style="display:block;margin-left:auto;margin-right:auto"/></a> <div class="ui simple dropdown item"> Procedure <i class="dropdown icon"></i> <div class="menu"> <a href="beforestarting.html" class="item">Before Starting </a> <a href="accessingrcm.html" class="item">Accessing RCM </a> <a href="sdsetup.html" class="item">SD Card Setup </a> <a href="safetyprecautions.html" class="item">Safety Precautions </a> <a href="final.html" class="item">Using CFW </a> </div></div><a href="troubleshooting.html" class="item">Troubleshooting </a> <a href="faq.html" class="item"> Frequently Asked Questions </a> <a href="credits.html" class="item"> Credits </a> <div class="right menu"> <a href="https://www.sdsetup.com" class="item">Back to SDSetup </a> </div></div>
 	<div class="ui container">
-		<div class="docs-example">
+		<div class="ui segment">
 			<h1 class="ui header" style="text-align:center">
 				Credits
 			</h1>
@@ -31,6 +31,6 @@
 			</ul>
 		</div>
 	</div>
-	<div data-include="layout/footer.html"></div>
+	<div style="margin:2em"><div class=" ui center compact segment" style="margin:auto"><span style="margin-right:1rem;padding-bottom:0.5rem">Light</span> <div class="ui toggle fitted checkbox" "><input id="cbx-theme" type="checkbox"><label/> </div><span style="margin-left:1rem">Dark</span></div><br><div style="text-align:center;color:#808080"><b>&copy; 2018 noahc3<br/>The Nintendo Switch name and logo are &copy; Nintendo. This site is in no way affiliated with Nintendo or any of its partners.</b></div></div>	
 </body>
 </html>

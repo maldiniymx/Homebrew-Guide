@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.4.0 - Dimmer
+ * # Semantic UI 2.6.0 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -156,7 +156,7 @@ $.fn.dimmer = function(parameters) {
               module.hide();
               event.stopImmediatePropagation();
             }
-          },
+          }
         },
 
         addContent: function(element) {
@@ -222,7 +222,9 @@ $.fn.dimmer = function(parameters) {
             module.show();
           }
           else {
-            module.hide();
+            if ( module.is.closable() ) {
+              module.hide();
+            }
           }
         },
 

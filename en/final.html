@@ -13,12 +13,12 @@
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
 	<script src="scripts/semanticui/semantic.min.js"></script>
-	<script src="scripts/csi.min.js"></script>
+	<script src="scripts/global.js"></script>
 </head>
 <body style="background-color:#F7F7F7;height:100%">
-	<div data-include="layout/header.html"></div>
+	<div class="ui menu"> <a href="/en/" class="item"><img class="ui small image" src="/en/img/logo.png" style="display:block;margin-left:auto;margin-right:auto"/></a> <div class="ui simple dropdown item"> Procedure <i class="dropdown icon"></i> <div class="menu"> <a href="beforestarting.html" class="item">Before Starting </a> <a href="accessingrcm.html" class="item">Accessing RCM </a> <a href="sdsetup.html" class="item">SD Card Setup </a> <a href="safetyprecautions.html" class="item">Safety Precautions </a> <a href="final.html" class="item">Using CFW </a> </div></div><a href="troubleshooting.html" class="item">Troubleshooting </a> <a href="faq.html" class="item"> Frequently Asked Questions </a> <a href="credits.html" class="item"> Credits </a> <div class="right menu"> <a href="https://www.sdsetup.com" class="item">Back to SDSetup </a> </div></div>
 	<div class="ui container">
-		<div class="docs-example">
+		<div class="ui segment">
 			<h1 class="ui header" style="text-align:center">
 				Section 4: Using CFW
 			</h1>
@@ -33,11 +33,11 @@
 			<p>This section provides some extra info about using your newly found powers.</p>
 		</div>
 		
-		<div class="ui info message" style="text-align:center">
+		<div class="ui blue message" style="text-align:center">
 			If something goes wrong or you need help, check <a href="troubleshooting.html">troubleshooting</a>.
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Launching Atmosphere CFW
 			</h2>
@@ -50,7 +50,7 @@
 			</ol>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Running other payloads within Hekate
 			</h2>
@@ -66,7 +66,7 @@
 			<p>Payloads go in the <b>'/bootloader/payloads'</b> folder on your SD card.</p>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Configuring Auto-Boot with Hekate
 			</h2>
@@ -83,7 +83,7 @@
 			If you need to get back into the menu, hold Volume Down when sending the Hekate payload.</p>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Enabling AutoRCM
 			</h2>
@@ -98,12 +98,12 @@
 			<p>You can disable AutoRCM by entering the same menu above and selecting <b>'Disable AutoRCM'</b>.<br><br>
 			From now on, to boot into stock firmware, select <b>'Launch > Stock'</b> in Hekate.</p>
 			
-			<div class="ui warning message" style="text-align:center">
+			<div class="ui yellow message" style="text-align:center">
 				Shutting down the Switch from Horizon after booting with AutoRCM <b>will not turn off the Switch!</b> You must choose <b>'Power Off'</b> from Hekate to properly shutdown the Switch. Not doing so will leave your Switch in RCM, slowing draining battery.
 			</div>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Accessing the Homebrew Menu
 			</h2>
@@ -112,7 +112,7 @@
 			Homebrew usually comes in <b>.nro</b> format. Put these in the <b>'/switch'</b> folder on your SD card.</p>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Installing NSP files (home menu applications)
 			</h2>
@@ -130,7 +130,7 @@
 			<p>After installing, your applications will appear on the Home Menu.</p>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Backing Up Save Files
 			</h2>
@@ -138,6 +138,6 @@
 			<p>You can backup and restore save files locally, without Nintendo Switch Online, by using <b>Checkpoint</b> from within the Homebrew Menu. Dumped saves will go in <b>'/switch/checkpoint/'</b> on your SD card for you to copy elsewhere. These save backups can later be restored to any user account on any Switch.</p>
 		</div>
 	</div>
-	<div data-include="layout/footer.html"></div>
+	<div style="margin:2em"><div class=" ui center compact segment" style="margin:auto"><span style="margin-right:1rem;padding-bottom:0.5rem">Light</span> <div class="ui toggle fitted checkbox" "><input id="cbx-theme" type="checkbox"><label/> </div><span style="margin-left:1rem">Dark</span></div><br><div style="text-align:center;color:#808080"><b>&copy; 2018 noahc3<br/>The Nintendo Switch name and logo are &copy; Nintendo. This site is in no way affiliated with Nintendo or any of its partners.</b></div></div>	
 </body>
 </html>

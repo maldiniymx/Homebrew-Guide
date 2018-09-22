@@ -13,12 +13,12 @@
 	  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	  crossorigin="anonymous"></script>
 	<script src="scripts/semanticui/semantic.min.js"></script>
-	<script src="scripts/csi.min.js"></script>
+	<script src="scripts/global.js"></script>
 </head>
 <body style="background-color:#F7F7F7;height:100%">
-	<div data-include="layout/header.html"></div>
+	<div class="ui menu"> <a href="/en/" class="item"><img class="ui small image" src="/en/img/logo.png" style="display:block;margin-left:auto;margin-right:auto"/></a> <div class="ui simple dropdown item"> Procedure <i class="dropdown icon"></i> <div class="menu"> <a href="beforestarting.html" class="item">Before Starting </a> <a href="accessingrcm.html" class="item">Accessing RCM </a> <a href="sdsetup.html" class="item">SD Card Setup </a> <a href="safetyprecautions.html" class="item">Safety Precautions </a> <a href="final.html" class="item">Using CFW </a> </div></div><a href="troubleshooting.html" class="item">Troubleshooting </a> <a href="faq.html" class="item"> Frequently Asked Questions </a> <a href="credits.html" class="item"> Credits </a> <div class="right menu"> <a href="https://www.sdsetup.com" class="item">Back to SDSetup </a> </div></div>
 	<div class="ui container">
-		<div class="docs-example">
+		<div class="ui segment">
 			<h1 class="ui header" style="text-align:center">
 				Section 1: Accessing RCM
 			</h1>
@@ -27,11 +27,11 @@
 			<a href="sdsetup.html"><button class="fluid ui red button">If you already have access to RCM, you can skip to Section 2: SD Card Setup</button></a>
 		</div>
 		
-		<div class="ui info message" style="text-align:center">
+		<div class="ui blue message" style="text-align:center">
 			If something goes wrong or you need help, check <a href="troubleshooting.html">troubleshooting</a>.
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Step 0: What You Will Need
 			</h2>
@@ -87,7 +87,7 @@
 			</ul>
 		</div>
 		
-		<div class="docs-example">
+		<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Step 1: Accessing RCM
 			</h2>
@@ -108,7 +108,7 @@
 				</li>
 			</ol>
 			
-			<div class="ui error message" style="text-align:center">
+			<div class="ui red message" style="text-align:center">
 				This can be an extemely frustrating and tedious process without a jig. Keep trying, you'll get it eventually.
 			</div>
 			
@@ -117,7 +117,7 @@
 			Did it work? Pat yourself on the back, you just finished the hardest part!
 		</div>
 	
-	<div class="docs-example">
+	<div class="ui segment">
 			<h2 class="ui header" style="text-align:center">
 				Step 2: Determining if Your Switch is Vulnerable to fusee-gelee
 			</h2>
@@ -139,10 +139,10 @@
 					<ul><li>If you get the error "RC=-50", restart the application and try again.</li></ul>
 				</li>
 			</ol>
-			<div class="ui success message" style="text-align:center">
+			<div class="ui green message" style="text-align:center">
 				Some text should now be displayed on your Nintendo Switch with an ASCII ReSwitched logo. If so, celebrate! Your Switch is vulnerable and you can now push payloads!
 			</div>
-			<div class="ui error message" style="text-align:center">
+			<div class="ui red message" style="text-align:center">
 				If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is patched. You will not be able to run CFW at this time. <br>(You should try a few more times just to be sure)
 			</div>
 			
@@ -156,10 +156,10 @@
 				</li>
 				<li>Run the command 'sudo python3 ./fusee-launcher.py ./fusee.bin'</li>
 			</ol>
-			<div class="ui success message" style="text-align:center">
+			<div class="ui green message" style="text-align:center">
 				Some text should now be displayed on your Nintendo Switch with an ASCII ReSwitched logo. If so, celebrate! Your Switch is vulnerable and you can now push payloads!
 			</div>
-			<div class="ui error message" style="text-align:center">
+			<div class="ui red message" style="text-align:center">
 				If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is patched. You will not be able to run CFW at this time.<br>(You should try a few more times just to be sure)
 			</div>
 			<div class="ui divider"></div>
@@ -172,10 +172,10 @@
 				<li>Your phone should give you a prompt to open Rekado with the option to use by default. Accept and press OK.</li>
 				<li>Under the Select Injector menu, touch Boot Payload and <b>fusee.bin</b></li>
 			</ol>
-			<div class="ui success message" style="text-align:center">
+			<div class="ui green message" style="text-align:center">
 				Some text should now be displayed on your Nintendo Switch with an ASCII ReSwitched logo. If so, celebrate! Your Switch is vulnerable and you can now push payloads!
 			</div>
-			<div class="ui error message" style="text-align:center">
+			<div class="ui red message" style="text-align:center">
 				If the application says the payload launch was successful, but nothing appears on your screen, unfortunately your Nintendo Switch is patched. You will not be able to run CFW at this time.<br>(You should try a few more times just to be sure)
 			</div>
 			<div class="ui divider"></div>
@@ -185,6 +185,6 @@
 		
 		<a href="sdsetup.html"><button class="fluid ui red button">Proceed to Section 2: SD Card Setup</button></a>
 	</div>
-	<div data-include="layout/footer.html"></div>
+	<div style="margin:2em"><div class=" ui center compact segment" style="margin:auto"><span style="margin-right:1rem;padding-bottom:0.5rem">Light</span> <div class="ui toggle fitted checkbox" "><input id="cbx-theme" type="checkbox"><label/> </div><span style="margin-left:1rem">Dark</span></div><br><div style="text-align:center;color:#808080"><b>&copy; 2018 noahc3<br/>The Nintendo Switch name and logo are &copy; Nintendo. This site is in no way affiliated with Nintendo or any of its partners.</b></div></div>	
 </body>
 </html>
