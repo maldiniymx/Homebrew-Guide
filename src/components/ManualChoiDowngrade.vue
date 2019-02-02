@@ -27,7 +27,7 @@
                 IMPORTANT: To 7.0.0 Downgraders
             </h2>
             <div class="ui divider"></div>
-            <p>You cannot downgrade directly to 6.2.0 as the ChoiDujour PC application does not support 6.2.0. You must downgrade to any other firmware version first and then upgrade back to 6.2.0 with ChoiDujourNX if you specifically want 6.2.0</p>
+            <p>You <b>cannot downgrade directly to 6.2.0</b> as the ChoiDujour PC application does not support 6.2.0. You must downgrade to any other firmware version first and then upgrade back to 6.2.0 with ChoiDujourNX if you specifically want 6.2.0</p>
         </div>
 
         <div class="ui red message" v-bind:class="{ inverted: $root.$data.darkTheme }">
@@ -167,7 +167,7 @@
                         <li>If the script fails otherwise, your keys.txt may be incompatible with ChoiDujour.</li>
                     </ul>
                 </li>
-                <li>Once finished, you should see a message similar to <b>"All files verified! Prepared firmware update is in folder NX-6.1.0"</b> in the command prompt. Make sure you can find this folder, it will be used later.</li>
+                <li>Once finished, you should see a message similar to <b>"All files verified! Prepared firmware update is in folder NX-X.X.X"</b> in the command prompt. Make sure you can find this folder, it will be used later.</li>
             </ol>
         </div>
 
@@ -316,7 +316,7 @@
                 <p style="text-align: center;">If you already have a backup of <b>your console unique</b> fuses.bin and tsec_keys.bin, skip to <b>Step 8.12</b></p>
             </div>
             <div class="ui teal message" v-bind:class="{ inverted: $root.$data.darkTheme }">
-                <p style="text-align: center;">You can follow this step even if you have already updated to 6.2.0.</p>
+                <p style="text-align: center;">You can follow this step even if you have already updated to the newest firmware.</p>
             </div>
             <div class="ui divider"></div>
             <ol>
