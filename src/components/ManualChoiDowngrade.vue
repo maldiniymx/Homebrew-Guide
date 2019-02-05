@@ -564,7 +564,9 @@
                 <li>Copy the <b>"hekate_ipl.ini"</b> file to the <b>"/bootloader"</b> folder on your SD card</li>
                 <li>Safely eject your SD card and insert it into your Switch</li>
                 <li>Enter RCM and send the <b>"hekate-ctcaer-4.6.bin"</b> payload</li>
-                <li>In Hekate, select <b>'Launch > FS_610-exfat_nocmac_nogc'</b></li>
+                <li>In Hekate, navigate to <b>Hekate > Tools > Fix archive bit (except Nintendo folder)</b></li>
+                <li>Navigate to Hekate > Tools > Fix archive bit (Nintendo folder)</li>
+                <li>Return to the main menu, then select <b>'Launch > FS_XXX-exfat_nocmac_nogc'</b> where XXX is the firmware version you downgraded to.</li>
                 <li>Make sure your system successfully boots
                     <ul>
                         <li>Your system may say it was unable to read the gamecard. This is normal.</li>
