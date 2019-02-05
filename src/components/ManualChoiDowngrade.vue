@@ -565,7 +565,7 @@
                 <li>Safely eject your SD card and insert it into your Switch</li>
                 <li>Enter RCM and send the <b>"hekate-ctcaer-4.6.bin"</b> payload</li>
                 <li>In Hekate, navigate to <b>Hekate > Tools > Fix archive bit (except Nintendo folder)</b></li>
-                <li>Navigate to Hekate > Tools > Fix archive bit (Nintendo folder)</li>
+                <li>Navigate to <b>Hekate > Tools > Fix archive bit (Nintendo folder)</b></li>
                 <li>Return to the main menu, then select <b>'Launch > FS_XXX-exfat_nocmac_nogc'</b> where XXX is the firmware version you downgraded to.</li>
                 <li>Make sure your system successfully boots
                     <ul>
