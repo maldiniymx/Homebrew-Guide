@@ -6,8 +6,10 @@
 The Ultimate Noob Guide for Hacking your Nintendo Switch
 ========================================================
 
+想要破解你的NS但是不知道怎么开始？跟着这篇教程来吧！
 Want to hack your Nintendo Switch but don't know where to start? Just follow this guide!
 
+这个教程可以帮你在前期未打补丁的NS上进入Homebrew和启动自制系统。
 This guide will walk you through all of the steps required to getting homebrew and custom firmware on a previously unmodified Nintendo Switch.
 
 .. raw:: html
@@ -24,7 +26,7 @@ This guide will walk you through all of the steps required to getting homebrew a
 
 .. toctree::
    :maxdepth: 2
-   :caption: Getting Started
+   :caption: 现在开始
    :hidden:
    
    /gettingstarted/beforestarting
@@ -33,7 +35,7 @@ This guide will walk you through all of the steps required to getting homebrew a
 
 .. toctree::
    :maxdepth: 2
-   :caption: Hacking Your Switch
+   :caption: 破解你的NS
    :hidden:
    
    /hacking/fuseegelee
@@ -42,7 +44,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    
 .. toctree::
    :maxdepth: 2
-   :caption: Using CFW
+   :caption: 使用自制系统
    :hidden:
    
    /usingcfw/hekate
@@ -51,7 +53,7 @@ This guide will walk you through all of the steps required to getting homebrew a
 
 .. toctree::
    :maxdepth: 2
-   :caption: Creating an emuMMC
+   :caption: 建立虚拟系统
    :hidden:
    
    /emummc/windows
@@ -60,7 +62,7 @@ This guide will walk you through all of the steps required to getting homebrew a
 
 .. toctree::
    :maxdepth: 2
-   :caption: Homebrew Development
+   :caption: Homebrew开发
    :hidden:
    
    /homebrew_dev/introduction
@@ -68,7 +70,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    
 .. toctree::
    :maxdepth: 2
-   :caption: Misc
+   :caption: 其他
    :hidden:
    
    /comparingcfws
@@ -80,7 +82,7 @@ This guide will walk you through all of the steps required to getting homebrew a
    
 .. toctree::
    :maxdepth: 2
-   :caption: Options
+   :caption: 可选
    :hidden:
    
    /switch-theme
