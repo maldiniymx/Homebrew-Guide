@@ -15,10 +15,12 @@ This guide will walk you through all of the steps required to getting homebrew a
 .. raw:: html
 
 	<div class="admonition warning">
+		<p class="last">如果你有没有任何破解NS的经验，请转到<a href="gettingstarted/beforestarting.html">开始之前</a></p>
 		<p class="last">To learn how to hack your Switch without any previous experience, proceed to <a href="gettingstarted/beforestarting.html">Before Starting</a></p>
 	</div>
     
     <div class="admonition warning">
+		<p class="last">关于自制系统的更多信息，包括各种有用的homebrew程序的设置和使用，请查看侧边栏。</p>
 		<p class="last">For other information on using Custom Firmware, including configuration and usage of various useful homebrew applications, check the sidebar.</p>
 	</div>
     
